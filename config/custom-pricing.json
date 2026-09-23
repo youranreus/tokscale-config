@@ -1,117 +1,135 @@
 {
-  "$schema": "https://tokscale.ai/custom-pricing.schema.json",
-  "models": {
-    "claude-opus-4-7-high": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.7 standard rate. Effort/thinking tier does not change per-token price."
+  "$schema" : "https://tokscale.ai/custom-pricing.schema.json",
+  "models" : {
+    "auto" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 1.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.25,
+      "input_cost_per_million_tokens" : 1.25,
+      "notes" : "Cursor legacy Auto (now Auto Cost): flat bundled rate regardless of routed model. Verified against Cursor's own billed cost export: est $8.25 vs billed $8.29.",
+      "output_cost_per_million_tokens" : 6,
+      "source" : "https://cursor.com/docs/cursor-router"
     },
-    "claude-opus-4-7-thinking-medium": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.7 standard rate."
+    "claude-opus-4-7-high" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.7 standard rate. Effort/thinking tier does not change per-token price.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "claude-opus-4-7-thinking-high": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.7 standard rate."
+    "claude-opus-4-7-thinking-high" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.7 standard rate.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "claude-opus-4-7-thinking-xhigh": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.7 standard rate."
+    "claude-opus-4-7-thinking-medium" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.7 standard rate.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "claude-opus-4-8-thinking-medium": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.8 standard rate."
+    "claude-opus-4-7-thinking-xhigh" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.7 standard rate.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "claude-opus-4-8-thinking-high": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.8 standard rate."
+    "claude-opus-4-8-thinking-high" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.8 standard rate.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "claude-opus-4-8-thinking-xhigh": {
-      "input_cost_per_million_tokens": 5.0,
-      "output_cost_per_million_tokens": 25.0,
-      "cache_creation_input_token_cost_per_million_tokens": 6.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.5,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.8 standard rate."
+    "claude-opus-4-8-thinking-high-fast" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 12.5,
+      "cache_read_input_token_cost_per_million_tokens" : 1,
+      "input_cost_per_million_tokens" : 10,
+      "notes" : "Claude Opus 4.8 Fast Mode: 2x the standard rate. Cache write 1.25x input, cache read 10% of input.",
+      "output_cost_per_million_tokens" : 50,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "claude-opus-4-8-thinking-high-fast": {
-      "input_cost_per_million_tokens": 10.0,
-      "output_cost_per_million_tokens": 50.0,
-      "cache_creation_input_token_cost_per_million_tokens": 12.5,
-      "cache_read_input_token_cost_per_million_tokens": 1.0,
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "notes": "Claude Opus 4.8 Fast Mode: 2x the standard rate. Cache write 1.25x input, cache read 10% of input."
+    "claude-opus-4-8-thinking-medium" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.8 standard rate.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "auto": {
-      "input_cost_per_million_tokens": 1.25,
-      "output_cost_per_million_tokens": 6.0,
-      "cache_creation_input_token_cost_per_million_tokens": 1.25,
-      "cache_read_input_token_cost_per_million_tokens": 0.25,
-      "source": "https://cursor.com/docs/cursor-router",
-      "notes": "Cursor legacy Auto (now Auto Cost): flat bundled rate regardless of routed model. Verified against Cursor's own billed cost export: est $8.25 vs billed $8.29."
+    "claude-opus-4-8-thinking-xhigh" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 6.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.5,
+      "input_cost_per_million_tokens" : 5,
+      "notes" : "Claude Opus 4.8 standard rate.",
+      "output_cost_per_million_tokens" : 25,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
-    "premium": {
-      "input_cost_per_million_tokens": 2.5,
-      "output_cost_per_million_tokens": 15.0,
-      "cache_creation_input_token_cost_per_million_tokens": 0.0,
-      "cache_read_input_token_cost_per_million_tokens": 0.25,
-      "source": "https://cursor.com/docs/models-and-pricing",
-      "notes": "Cursor legacy 'premium' request label, no model recorded. Zero cache-write tokens across all rows means an OpenAI-family model; GPT-5.4 list price x1.2 on-demand uplift reproduces Cursor's billed cost to 0.7% ($4.48 vs $4.45). Cache writes are not billed by OpenAI."
+    "codex-auto-review" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0,
+      "cache_read_input_token_cost_per_million_tokens" : 0.025,
+      "input_cost_per_million_tokens" : 0.25,
+      "notes" : "Codex built-in auto code review. OpenAI does not publish the underlying model; priced at GPT-5.1 Codex Mini list rate. Cache writes are not billed by OpenAI.",
+      "output_cost_per_million_tokens" : 2,
+      "source" : "https://cursor.com/docs/models-and-pricing"
     },
-    "gpt-5.3-codex-xhigh": {
-      "input_cost_per_million_tokens": 1.75,
-      "output_cost_per_million_tokens": 14.0,
-      "cache_creation_input_token_cost_per_million_tokens": 0.0,
-      "cache_read_input_token_cost_per_million_tokens": 0.175,
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "notes": "GPT-5.3 Codex standard rate. Reasoning effort does not change per-token price. Cache writes are not billed by OpenAI."
+    "gpt-5.3-codex-high-fast" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0,
+      "cache_read_input_token_cost_per_million_tokens" : 0.35,
+      "input_cost_per_million_tokens" : 3.5,
+      "notes" : "GPT-5.3 Codex fast mode: 2x the standard rate. Cache writes are not billed by OpenAI.",
+      "output_cost_per_million_tokens" : 28,
+      "source" : "https://developers.openai.com/api/docs/pricing"
     },
-    "gpt-5.3-codex-high-fast": {
-      "input_cost_per_million_tokens": 3.5,
-      "output_cost_per_million_tokens": 28.0,
-      "cache_creation_input_token_cost_per_million_tokens": 0.0,
-      "cache_read_input_token_cost_per_million_tokens": 0.35,
-      "source": "https://developers.openai.com/api/docs/pricing",
-      "notes": "GPT-5.3 Codex fast mode: 2x the standard rate. Cache writes are not billed by OpenAI."
+    "gpt-5.3-codex-xhigh" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0,
+      "cache_read_input_token_cost_per_million_tokens" : 0.175,
+      "input_cost_per_million_tokens" : 1.75,
+      "notes" : "GPT-5.3 Codex standard rate. Reasoning effort does not change per-token price. Cache writes are not billed by OpenAI.",
+      "output_cost_per_million_tokens" : 14,
+      "source" : "https://developers.openai.com/api/docs/pricing"
     },
-    "codex-auto-review": {
-      "input_cost_per_million_tokens": 0.25,
-      "output_cost_per_million_tokens": 2.0,
-      "cache_creation_input_token_cost_per_million_tokens": 0.0,
-      "cache_read_input_token_cost_per_million_tokens": 0.025,
-      "source": "https://cursor.com/docs/models-and-pricing",
-      "notes": "Codex built-in auto code review. OpenAI does not publish the underlying model; priced at GPT-5.1 Codex Mini list rate. Cache writes are not billed by OpenAI."
+    "gpt-reserve" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0.25,
+      "cache_read_input_token_cost_per_million_tokens" : 0.02,
+      "input_cost_per_million_tokens" : 0.20000000000000001,
+      "output_cost_per_million_tokens" : 1.2
     },
-    "premium (codex 5.3)": {
-      "input_cost_per_million_tokens": 1.75,
-      "output_cost_per_million_tokens": 14.0,
-      "cache_creation_input_token_cost_per_million_tokens": 0.0,
-      "cache_read_input_token_cost_per_million_tokens": 0.175,
-      "source": "https://cursor.com/docs/models-and-pricing",
-      "notes": "Cursor legacy premium request routed to GPT-5.3 Codex. Cache writes are not billed by OpenAI."
+    "hy4-preview-ioa" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0,
+      "cache_read_input_token_cost_per_million_tokens" : 0.042000000000000003,
+      "input_cost_per_million_tokens" : 0.83399999999999996,
+      "output_cost_per_million_tokens" : 2.5009999999999999
+    },
+    "premium" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0,
+      "cache_read_input_token_cost_per_million_tokens" : 0.25,
+      "input_cost_per_million_tokens" : 2.5,
+      "notes" : "Cursor legacy 'premium' request label, no model recorded. Zero cache-write tokens across all rows means an OpenAI-family model; GPT-5.4 list price x1.2 on-demand uplift reproduces Cursor's billed cost to 0.7% ($4.48 vs $4.45). Cache writes are not billed by OpenAI.",
+      "output_cost_per_million_tokens" : 15,
+      "source" : "https://cursor.com/docs/models-and-pricing"
+    },
+    "premium (codex 5.3)" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 0,
+      "cache_read_input_token_cost_per_million_tokens" : 0.175,
+      "input_cost_per_million_tokens" : 1.75,
+      "notes" : "Cursor legacy premium request routed to GPT-5.3 Codex. Cache writes are not billed by OpenAI.",
+      "output_cost_per_million_tokens" : 14,
+      "source" : "https://cursor.com/docs/models-and-pricing"
+    },
+    "ttsw-codex-gpt-5.6-sol" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 5,
+      "cache_read_input_token_cost_per_million_tokens" : 0.40000000000000002,
+      "input_cost_per_million_tokens" : 4,
+      "output_cost_per_million_tokens" : 20
     }
   }
 }
