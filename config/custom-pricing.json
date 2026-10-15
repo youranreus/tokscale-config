@@ -81,6 +81,14 @@
       "output_cost_per_million_tokens" : 20,
       "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
     },
+    "claude-sonnet-5-5@300k" : {
+      "cache_creation_input_token_cost_per_million_tokens" : 2.5,
+      "cache_read_input_token_cost_per_million_tokens" : 0.1,
+      "input_cost_per_million_tokens" : 2,
+      "notes" : "Proxied model id, priced at the Claude Sonnet 5.5 global standard rate. The @300k suffix is a proxy context label; Anthropic bills the full context window at this same rate. Cache write is the 5-minute rate (1.25x input); 1-hour writes are $4 and this file only has one cache-write field. Cache reads on Sonnet 5.5 are 0.05x input ($0.10), not the usual 0.1x.",
+      "output_cost_per_million_tokens" : 10,
+      "source" : "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
     "codex-auto-review" : {
       "cache_creation_input_token_cost_per_million_tokens" : 0,
       "cache_read_input_token_cost_per_million_tokens" : 0.025,
